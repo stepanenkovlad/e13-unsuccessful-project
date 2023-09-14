@@ -1,0 +1,101 @@
+.cart {
+    min-height: 90vh;
+    padding-bottom: 50px;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-content: flex-start;
+        padding: 70px 10px 0 10px;
+    }
+    &__way {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    &__form {
+        button {
+            margin-top: 15px;
+            background: #D9D9D9;
+            height: 50px;
+            width: 100%;
+            border: none;
+            &:focus {
+                outline: none;
+            }
+        }
+    }
+    &__total {
+        margin-top: 25px;
+        border-top: 1px solid #000;
+        padding-top: 10px;
+        font-size: 1em;
+        font-weight: 400;
+        span {
+            font-weight: 500;
+        }
+    }
+    &__title {
+        font-weight: 450;
+    }
+
+    &-item {
+        display: flex;
+        margin-bottom: 30px;
+        height: 360px;
+        &__img {
+            margin-right: 30px;
+            width: 240px;
+            object-fit: cover;
+        }
+        &__text {
+            width: 235px;
+        }
+        &__title {
+            max-width: 100%;
+            word-break: break-all;
+        }
+        &__price {
+            margin-top: 8px;
+        }
+        &__size {
+            margin-top: 10px;
+        }
+        &__close {
+            border: none;
+            background: rgba(0, 0, 0, 0);
+            width: 18px;
+            height: 18px;
+            margin-top: 2px;
+            vertical-align: baseline;
+            &:focus {
+                outline: none;
+            }
+            img {
+                vertical-align: baseline;
+                width: 100%;
+                margin-right: 0;
+            }
+        }
+    }
+    &__address {
+        margin-top: 20px;
+        label {
+            font-weight: 450;
+        }
+    }
+    label.error {
+        word-wrap: break-word;
+        font-weight: 400;
+        font-size: .875em;
+        line-height: 1.5;
+        text-transform: uppercase;
+        color: #000;
+        margin-bottom: 0;
+        margin-top: 5px;
+        color: red;
+    }
+    input.error {
+        border-color: red;
+        color: black;
+    }
+}

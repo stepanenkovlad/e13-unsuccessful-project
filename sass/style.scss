@@ -1,0 +1,151 @@
+@import 'libs/bootstrap-reboot.min';
+
+@import 'base/variables';
+
+@import 'blocks/text';
+@import 'blocks/cart';
+@import 'blocks/footer';
+@import 'blocks/catalog';
+@import 'blocks/item';
+@import 'blocks/labels';
+@import 'blocks/service';
+
+* {
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+} 
+
+select,
+textarea,
+input[type="text"],
+input[type="button"],
+input[type="submit"],
+input[type="tel"],
+input[type="email"]
+{
+	-webkit-appearance:none;
+	border-radius:0;
+}
+
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+.side-panel {
+    display: none;
+}
+
+.n-mr {
+    margin-right: 0;
+}
+
+body {
+    margin: 0;
+    font-family: system-ui;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-family: 'HelveticaNeueCyr', sans-serif;
+    a {
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            color: $main-text;
+        }
+    }
+}
+
+header {
+    z-index: 10;
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 2.625em;
+    top: 30px;
+    left: 40px;
+    a {
+        img {
+            height: 2.625em;
+        }
+    }
+}
+
+.main {
+    padding: 45px 55px 0 55px;
+    background-color: white;
+    height: 100vh;
+    position: relative;
+    &__link {
+        width: 60%;
+        position: absolute;
+        height: 90vh;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        left: 50%;
+        img {
+            max-width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0 auto;
+            object-fit: cover;
+        }
+        h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-weight: 700;
+            font-size: 2em;
+            line-height: 80px;
+            display: block;
+            text-transform: uppercase;
+            color: white;
+        }
+    }
+}
+
+.header {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__cart {
+        position: fixed;
+        z-index: 100;
+        height: 42px;
+        top: 45px;
+        right: 55px;
+        display: flex;
+        align-items: center;
+        &-hidden {
+            display: none;
+        }
+    }
+    
+}
+
+.side-panel {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+    width: 200px;
+    .category {
+        margin-bottom: 2px;
+    }
+    .sub-categories {
+        margin-top: 23px;
+    }
+    a {
+        display: inline-block;
+        height: 100%;
+    }
+    li {
+        list-style: none;
+    }
+}
+
+@import 'blocks/media';

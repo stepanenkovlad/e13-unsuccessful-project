@@ -1,0 +1,57 @@
+.text-label {
+    display: block;
+    margin-bottom: 20px;
+    font-weight: 500;
+    input {
+        margin-top: 3px;
+        display: block;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #000000;
+        font-weight: 300;
+        font-size: 1.1em;
+        line-height: 1.5;
+        color: #000;
+        width: 100%;
+        &:focus-visible {
+            outline: none;
+        }
+    }
+}
+
+.radio-label {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    input {
+        // margin-right: 4px;
+        display: none;
+    }
+    div {
+        display: inline-block;
+        border: 1px solid black;
+        width: 14px;
+        height: 14px;
+        position: relative;
+        vertical-align: middle;
+        box-sizing: border-box;
+        margin-right: 4px;
+        background-color:#ffffff;
+        &:before {
+            content: '';
+            background-image: url("../icons/check-mark-svgrepo-com 1.svg");
+            width: 11px;
+            height: 11px;
+            opacity: 0;
+            transition: 0.3s;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border-radius: 300px;
+        }
+    }
+    input:checked + div:before {
+        opacity: 1;
+    }
+}

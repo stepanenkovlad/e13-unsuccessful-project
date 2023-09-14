@@ -1,0 +1,11 @@
+.service {
+    min-height: 100vh;
+    padding: 70px 120px 70px 120px;
+    text-align: center;
+    &__text {
+        margin: 0 auto;
+        margin-top: 30px;
+        width: 50%;
+        font-size: 1em;
+    }
+}
